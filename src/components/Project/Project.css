@@ -25,6 +25,7 @@
   justify-items: center;
   margin-top: 20px;
 }
+
 .project-card {
   background-color: #222;
   margin: 20px;
@@ -143,18 +144,22 @@
   .project-dialog {
     width: 70%;
   }
+
   .close-dialog {
     font-size: 16px;
   }
+
   .dialog-content h3 {
     font-size: 1.3em;
   }
+
   .dialog-content ul li {
     font-size: 16px;
   }
+
   .project-section {
     margin-bottom: 10px;
-    min-height: auto;
+    height: auto; /* Change to auto */
   }
 }
 
@@ -164,24 +169,30 @@
     padding-left: 15px;
     padding-right: 15px;
   }
+
   .close-dialog {
     font-size: 15px;
   }
+
   .dialog-content h3 {
     font-size: 1.2em;
   }
+
   .dialog-content h4 {
     font-size: 1.1em;
   }
+
   .dialog-content ul li {
     font-size: 12px;
   }
+
   .dialog-image {
     margin-bottom: 10px;
   }
+
   .project-section {
     margin-bottom: 10px;
-    min-height: auto;
+    height: auto; /* Change to auto */
   }
 }
 
@@ -190,23 +201,29 @@
     width: 100%;
     padding: 10px;
   }
+
   .close-dialog {
     font-size: 14px;
   }
+
   .dialog-content h3 {
     font-size: 1.1em;
   }
+
   .dialog-content h4 {
     font-size: 1em;
   }
+
   .dialog-content ul li {
     font-size: 11px;
   }
+
   .dialog-image {
     margin-bottom: 8px;
   }
+
   .project-section {
     margin-bottom: 10px;
-    min-height: auto;
+    height: auto; /* Change to auto */
   }
 }
