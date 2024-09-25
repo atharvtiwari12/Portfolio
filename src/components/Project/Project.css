@@ -152,6 +152,10 @@
   .dialog-content ul li {
     font-size: 16px;
   }
+  .project-section {
+    margin-bottom: 10px;
+    height: 100%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -175,6 +179,10 @@
   .dialog-image {
     margin-bottom: 10px;
   }
+  .project-section {
+    margin-bottom: 10px;
+    height: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -196,5 +204,9 @@
   }
   .dialog-image {
     margin-bottom: 8px;
+  }
+  .project-section {
+    margin-bottom: 10px;
+    height: 100%;
   }
 }

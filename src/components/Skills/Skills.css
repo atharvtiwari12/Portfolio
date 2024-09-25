@@ -73,11 +73,23 @@
   .skills-box {
     width: 45%;
   }
+  .skills-section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 100%;
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .skills-box {
     width: 100%;
     margin-bottom: 20px;
+  }
+  .skills-section {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 100%;
+    padding: 0;
   }
 }
