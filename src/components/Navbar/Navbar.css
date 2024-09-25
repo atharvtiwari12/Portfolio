@@ -38,7 +38,7 @@
 }
 
 img {
-  height: 120px;
+  height: 60px;
 }
 
 .anchor-link {
@@ -55,7 +55,9 @@ img {
   .navbar {
     margin: 20px 50px;
   }
-
+  img {
+    height: 40px;
+  }
   .desktop {
     display: none;
   }
@@ -125,7 +127,7 @@ img {
   }
 
   img {
-    height: 80px;
+    height: 40px;
   }
 
   .nav-menu {
