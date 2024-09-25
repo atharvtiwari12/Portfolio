@@ -73,6 +73,7 @@
   .skills-box {
     width: 45%;
   }
+
   .skills-section {
     margin-top: 10px;
     margin-bottom: 10px;
@@ -83,9 +84,10 @@
 
 @media screen and (max-width: 768px) {
   .skills-box {
-    width: 100%;
+    width: 95%;
     margin-bottom: 20px;
   }
+
   .skills-section {
     margin-top: 10px;
     margin-bottom: 10px;
