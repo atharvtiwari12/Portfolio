@@ -1,0 +1,149 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 110px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 60px;
+  font-size: 18px;
+  cursor: pointer;
+  color: white;
+  position: static;
+}
+
+.nav-connect {
+  padding: 13px 22px;
+  border-radius: 50px;
+  background: linear-gradient(267deg, #da7c25 0.56%, #b923e1 104.06%);
+  font-size: 18px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.nav-connect:hover {
+  transform: scale(1.05);
+}
+
+.nav-connect.mobile {
+  display: none;
+}
+
+.nav-connect.desktop {
+  display: block;
+}
+
+img {
+  height: 120px;
+}
+
+.anchor-link {
+  text-decoration: none;
+  color: white;
+}
+
+.menu-mob-open,
+.menu-mob-close {
+  display: none;
+}
+
+@media (max-width: 988px) {
+  .navbar {
+    margin: 20px 50px;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .menu-mob-open {
+    display: block;
+    cursor: pointer;
+    color: white;
+    font-size: 30px;
+  }
+
+  .menu-mob-close {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+  }
+
+  .nav-menu {
+    position: fixed;
+    flex-direction: column;
+    align-items: center;
+    top: 0;
+    gap: 30px;
+    background-color: #000000;
+    width: 350px;
+    height: 100%;
+    right: -100%;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+
+  .nav-menu.open {
+    right: 0;
+    backdrop-filter: blur(5px);
+  }
+
+  .nav-menu.open .menu-mob-close {
+    display: block;
+  }
+
+  .nav-menu li {
+    text-align: center;
+    width: 100%;
+  }
+
+  .nav-connect.mobile {
+    padding: 15px 25px;
+    margin-top: 20px;
+    display: block;
+    text-align: center;
+  }
+
+  .nav-connect.desktop {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    margin: 0;
+    padding: 5px 10px;
+    width: 100%;
+  }
+
+  img {
+    height: 80px;
+  }
+
+  .nav-menu {
+    width: 100%;
+    padding: 40px 0;
+  }
+
+  .nav-menu li {
+    font-size: 18px;
+    width: 100%;
+  }
+
+  .nav-connect.mobile {
+    display: none;
+  }
+
+  .menu-mob-open,
+  .menu-mob-close {
+    font-size: 25px;
+  }
+}

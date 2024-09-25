@@ -1,0 +1,200 @@
+.project-section {
+  padding: 0 20px;
+  min-height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.project-section h3 {
+  margin: 25px 0;
+  font-size: 2.2em;
+}
+
+.project-section p {
+  font-size: 1.1em;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  width: 100%;
+  justify-items: center;
+  margin-top: 20px;
+}
+.project-card {
+  background-color: #222;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-image {
+  width: 100%;
+  max-width: 750px;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-info {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.project-card:hover .project-info {
+  opacity: 1;
+}
+
+.project-dialog {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 600px;
+  height: 100%;
+  background-color: #202020;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  overflow-y: auto;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out;
+  z-index: 10;
+}
+
+.project-dialog a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+
+.dialog-content {
+  color: #fff;
+}
+
+.dialog-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.close-dialog {
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  margin-bottom: 20px;
+  display: block;
+  position: sticky;
+  top: 0;
+  background-color: #202020;
+  padding: 15px;
+  padding-bottom: 20px;
+  z-index: 11;
+  border-bottom: 1px solid #fff;
+}
+
+.dialog-content h3 {
+  font-size: 1.4em;
+  margin-bottom: 20px;
+}
+
+.dialog-content h4 {
+  margin-top: 20px;
+}
+
+.dialog-content ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.project-dialog li {
+  margin-bottom: 12px;
+  font-size: 16px;
+}
+
+.project-dialog h4 + a {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.project-dialog a + h4 {
+  margin-top: 20px;
+}
+
+@media (max-width: 1024px) {
+  .project-dialog {
+    width: 70%;
+  }
+  .close-dialog {
+    font-size: 16px;
+  }
+  .dialog-content h3 {
+    font-size: 1.3em;
+  }
+  .dialog-content ul li {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .project-dialog {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .close-dialog {
+    font-size: 15px;
+  }
+  .dialog-content h3 {
+    font-size: 1.2em;
+  }
+  .dialog-content h4 {
+    font-size: 1.1em;
+  }
+  .dialog-content ul li {
+    font-size: 12px;
+  }
+  .dialog-image {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-dialog {
+    width: 100%;
+    padding: 10px;
+  }
+  .close-dialog {
+    font-size: 14px;
+  }
+  .dialog-content h3 {
+    font-size: 1.1em;
+  }
+  .dialog-content h4 {
+    font-size: 1em;
+  }
+  .dialog-content ul li {
+    font-size: 11px;
+  }
+  .dialog-image {
+    margin-bottom: 8px;
+  }
+}
